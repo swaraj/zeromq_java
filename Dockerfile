@@ -24,8 +24,8 @@ RUN ldconfig
 RUN cd /root && git clone https://github.com/zeromq/jzmq.git && cd jzmq && ./autogen.sh && ./configure && make && make install
 RUN ldconfig
 
-COPY HwClient.java /root	
-COPY HwServer.java /root
+COPY HwClient.java /root/	
+COPY HwServer.java /root/
 
 EXPOSE 5555
 
